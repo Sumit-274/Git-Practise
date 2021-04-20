@@ -1,6 +1,9 @@
 from plyer import notification
 
-def Notification():
-    notification.notify(title="Heading",message="Hey")
+def Notification(title,message):
+    notification.notify(title=title,message=message)
 
-Notification()
+
+inp1 = input("Enter the Heading\n")
+inp2 = input("Enter the Message\n")
+Notification(inp1,inp2)    
